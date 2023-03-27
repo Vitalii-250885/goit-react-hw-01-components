@@ -10,14 +10,15 @@ export const Wrapper = styled.ul`
 `;
 
 export const StatsItem = styled.li`
-    display: flex;
-    flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    width: 133px;
+    text-align: center;
 `;
 
 export const StatLabel = styled.span`
+    display: block;
     width: 100%;
     font-size: 18px;
     color: grey;
@@ -25,7 +26,7 @@ export const StatLabel = styled.span`
 `;
 
 export const StatQuantity = styled.span`
-    display: flex;
+    display: block;
     width: 100%;
     font-size: 22px;
     font-weight: bold;
