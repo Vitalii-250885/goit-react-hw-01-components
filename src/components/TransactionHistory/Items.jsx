@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Td, Tr } from "./Items.styled";
 
 export const Items = ({ items }) => {
@@ -12,4 +13,11 @@ export const Items = ({ items }) => {
             ))}
         </>
     );
+};
+
+Items.propTypes = {
+    items: PropTypes.arrayOf(
+    PropTypes.shape({
+        id: PropTypes.string.isRequired,
+    }))
 };

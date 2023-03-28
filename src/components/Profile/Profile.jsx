@@ -1,8 +1,8 @@
-import { Description } from "components/Description/Description";
-import { Stats } from "components/Stats/Stats"
-import { Wrapper } from "./User.styled";
+import { Description } from "components/Profile/Description";
+import { Stats } from "components/Profile/Stats"
+import { Wrapper } from "./Profile.styled";
 
-export const User = ({ user }) => {
+export const Profile = ({ user }) => {
     const {username, tag, location, avatar, stats:{followers, views, likes}} = user;
     return (
         <Wrapper className="profile">

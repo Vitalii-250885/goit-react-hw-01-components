@@ -1,7 +1,9 @@
 import { BsCircleFill } from "react-icons/bs";
-import { Wrapper, Avatar, Name, IsOnline, FriendItem } from "./Friend.styled"
+import { Wrapper, Avatar, Name, IsOnline, FriendItem } from "./FriendList.styled"
+import PropTypes from "prop-types";
 
-export const Friend = ({ friends }) => {
+export const FriendList = ({ friends }) => {
+
        return (
         <Wrapper>
             {friends.map(friend => (
@@ -13,5 +15,12 @@ export const Friend = ({ friends }) => {
                 
             ))}  
         </Wrapper>
-    );
+    );    
+};
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+    PropTypes.shape({
+        id: PropTypes.number.isRequired,
+    }))
 };

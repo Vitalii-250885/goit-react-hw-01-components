@@ -5,7 +5,7 @@ export const TransactionHistory = ({ transactions }) => {
     
 
     return (
-        <Table class="transaction-history">
+        <Table className="transaction-history">
             <Thead>
                 <tr>
                     <Th>Type</Th>
